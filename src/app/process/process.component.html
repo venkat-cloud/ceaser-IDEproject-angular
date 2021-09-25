@@ -1,0 +1,16 @@
+<div class="container"> 
+    <fieldset >
+        <label for="key">Key</label>
+        <input type="number" name='key' class="form-control" [(ngModel)]='key'>
+      </fieldset>
+    <fieldset >
+      <label for="plaintext">Plaintext</label>
+      <input type="text" name='plainText' class="form-control" [(ngModel)]='plainText' >
+    </fieldset>
+    <fieldset >
+      <label for='cipherText'>Ciphertext</label>
+      <input type="text" name="cipherText" class="form-control" [(ngModel)] = 'cipherText'>
+    </fieldset>
+    <br>
+    <button (click)='crypt()' class="btn btn-success">compute</button>
+  </div>
